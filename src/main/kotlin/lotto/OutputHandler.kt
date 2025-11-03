@@ -2,6 +2,10 @@ package lotto
 
 class OutputHandler {
 
+    fun printPurchaseAmountPrompt() {
+        println(PROMPT_PURCHASE_AMOUNT)
+    }
+
     fun printPurchaseCount(count: Int) {
         println()
         println(MESSAGE_PURCHASE_COUNT.format(count))
