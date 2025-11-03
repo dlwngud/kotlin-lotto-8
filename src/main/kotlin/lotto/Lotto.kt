@@ -2,8 +2,8 @@ package lotto
 
 class Lotto(private val numbers: List<Int>) {
     init {
-        require(numbers.size == 6) { "[ERROR] 로또 번호는 6개여야 합니다." }
+        require(numbers.size == 6) { ErrorMessage.SIX_NUMBER.message }
+        require(numbers.all { it in 1..45 }) { ErrorMessage.INVALID_NUMBER.message }
+        require(numbers.size == numbers.toSet().size) { ErrorMessage.DUPLICATE_NUMBER.message }
     }
-
-    // TODO: 추가 기능 구현
 }
