@@ -4,7 +4,7 @@ class OutputHandler {
 
     fun printPurchaseCount(count: Int) {
         println()
-        println(MESSAGE_PURCHASE_COUNT.format(count / 1000))
+        println(MESSAGE_PURCHASE_COUNT.format(count))
     }
 
     companion object {

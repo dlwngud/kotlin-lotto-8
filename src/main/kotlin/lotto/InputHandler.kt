@@ -10,6 +10,6 @@ class InputHandler {
         val purchaseAmount = Console.readLine().toIntOrNull()
             ?: throw IllegalArgumentException(ErrorMessage.INVALID_INPUT.message)
         inputValidator.validatePurchaseAmount(purchaseAmount)
-        return purchaseAmount
+        return purchaseAmount / InputValidator.PRICE_PER_LOTTO
     }
 }
