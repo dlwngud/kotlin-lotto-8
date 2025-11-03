@@ -6,6 +6,16 @@ class OutputHandler {
         println(PROMPT_PURCHASE_AMOUNT)
     }
 
+    fun printWinningNumbersPrompt() {
+        println()
+        println(PROMPT_WINNING_NUMBERS)
+    }
+
+    fun printBonusNumberPrompt() {
+        println()
+        println(PROMPT_BONUS_NUMBER)
+    }
+
     fun printPurchaseCount(count: Int) {
         println()
         println(MESSAGE_PURCHASE_COUNT.format(count))
